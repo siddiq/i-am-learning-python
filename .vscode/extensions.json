@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "ms-python.python", // Python support
+    "ms-python.vscode-pylance", // Pylance for IntelliSense and type checking
+    "esbenp.prettier-vscode", // Prettier code formatter
+    "ms-python.black-formatter", // Black formatter for Python
+    "ms-python.isort", // isort for import sorting
+    "streetsidesoftware.code-spell-checker", // Spell checker for comments and strings
+    "eamodio.gitlens", // GitLens for Git insights
+    "EditorConfig.EditorConfig" // EditorConfig for consistent code style
+  ]
+}
