@@ -4,7 +4,7 @@ from collections import Counter
 
 
 def test_list_counting():
-    """ list frequency counting """
+    """list frequency counting"""
 
     list1 = [1, 1, 1, 2, 2, 3, 4, 5, 6, 7, 77, 7, 7, 7]
     counts = Counter(list1)
@@ -14,7 +14,7 @@ def test_list_counting():
 
 
 def test_list_reference():
-    """ list reference """
+    """list reference"""
 
     list1 = [1, 2, 3, 4, 5]
     list2 = list1
@@ -26,7 +26,7 @@ def test_list_reference():
 
 
 def test_list_copy():
-    """ list copy """
+    """list copy"""
 
     list1 = [1, 2, 3, 4, 5]
     list2 = list1.copy()
@@ -38,7 +38,7 @@ def test_list_copy():
 
 
 def test_unpacking_lists():
-    """ unpacking lists """
+    """unpacking lists"""
 
     list1 = [1, 2, 3, 4, 5]
 
@@ -62,4 +62,3 @@ def test_unpacking_lists():
     assert a == 1
     assert b == [2, 3, 4]
     assert c == 5
-

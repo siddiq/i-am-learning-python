@@ -2,7 +2,7 @@
 
 
 def test_indexing():
-    """ indexing """
+    """indexing"""
 
     text = "hello world"
     assert text[0] == "h"
@@ -15,15 +15,15 @@ def test_indexing():
 
 
 def test_reverse():
-    """ reverse """
+    """reverse"""
 
     text = "abc123"
     assert text[::-1] == "321cba"
 
 
 def test_step():
-    """ step """
+    """step"""
 
     text = "0123456789"
-    assert text[::2] == "02468"   # step is 2
+    assert text[::2] == "02468"  # step is 2
     assert text[1::2] == "13579"  # start is 1, step is 2

@@ -1,10 +1,11 @@
 import pytest
+
 """ module to learn set """
 
 
 def test_set_creating():
-    """ test set creating """
-    
+    """test set creating"""
+
     set1 = {1, 2, 3, 4, 5}
     assert set1 == {1, 2, 3, 4, 5}
 
@@ -12,14 +13,14 @@ def test_set_creating():
     assert set2 == {1, 2, 3, 4, 5}
 
     set4 = set("hello")
-    assert set4 == {'h', 'e', 'l', 'o'}
+    assert set4 == {"h", "e", "l", "o"}
 
     set3 = set()
     assert set3 == set()
 
 
 def test_set_add_remove():
-    """ test set add, remove, update """
+    """test set add, remove, update"""
 
     set1 = {1, 2, 3, 4, 5}
     set1.add(6)
@@ -29,7 +30,7 @@ def test_set_add_remove():
     assert set1 == {1, 2, 3, 4, 5}
     with pytest.raises(KeyError):
         set1.remove(6)
-        
+
     set1.discard(6)
     set1.discard(6)
     set1.discard(6)
@@ -43,14 +44,14 @@ def test_set_add_remove():
 
 
 def test_set_operations():
-    """ union, intersections etc """
+    """union, intersections etc"""
 
     set1 = {1, 2, 3}
     set2 = {3, 4, 5}
 
     set3 = set1 | set2
     assert set3 == {1, 2, 3, 4, 5}
-    
+
     set4 = set1.union(set2)
     assert set4 == {1, 2, 3, 4, 5}
 
@@ -77,7 +78,7 @@ def test_set_operations():
 
 
 def test_set_check_membership():
-    """ check membership """
+    """check membership"""
 
     set1 = {1, 2, 3}
     assert 1 in set1
@@ -88,7 +89,7 @@ def test_set_check_membership():
 
 
 def test_set_check_subset():
-    """ check subset """
+    """check subset"""
 
     set1 = {1, 2, 3}
     set2 = {1, 2, 3, 4, 5}
@@ -108,7 +109,7 @@ def test_set_check_subset():
 
 
 def test_set_check_disjoint():
-    """ check disjoint """
+    """check disjoint"""
 
     set1 = {1, 2, 3}
     set2 = {1, 2, 3, 4, 5}
@@ -121,7 +122,7 @@ def test_set_check_disjoint():
 
 
 def test_set_clear():
-    """ clear set """
+    """clear set"""
 
     set1 = {1, 2, 3}
     set1.clear()
@@ -129,7 +130,7 @@ def test_set_clear():
 
 
 def test_set_frozenset():
-    """ frozenset """
+    """frozenset"""
 
     set1 = {1, 2, 3}
     set2 = frozenset(set1)

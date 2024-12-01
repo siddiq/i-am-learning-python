@@ -2,7 +2,7 @@
 
 
 def test_checktypes():
-    """ checking """
+    """checking"""
 
     text = "123"
     assert text.isnumeric()
@@ -27,14 +27,14 @@ def test_checktypes():
 
 
 def test_replace():
-    """ replace """
+    """replace"""
 
     text = "<b>hello</b>"
-    assert text.replace('<b>', '').replace('</b>', '') == 'hello'
+    assert text.replace("<b>", "").replace("</b>", "") == "hello"
 
 
 def test_bytes():
-    """ bytes """
+    """bytes"""
 
     text = "hAllo world"
     text_bytes = b"hAllo world"
@@ -48,7 +48,7 @@ def test_bytes():
 
 
 def test_joining_and_splitting():
-    """ joining and splitting """
+    """joining and splitting"""
 
     list1 = ["hello", "world"]
     assert " ".join(list1) == "hello world"
@@ -56,7 +56,7 @@ def test_joining_and_splitting():
 
 
 def test_splitting():
-    """ splitting """
+    """splitting"""
 
     text = "This is an example sentence"
     arr = text.split(" ")

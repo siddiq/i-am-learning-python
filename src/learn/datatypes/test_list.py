@@ -2,7 +2,7 @@
 
 
 def test_list_creating():
-    """ list creating """
+    """list creating"""
 
     list1 = [1, 2, 3, 4, 5]
     assert list1 == [1, 2, 3, 4, 5]
@@ -37,7 +37,7 @@ def test_list_creating():
 
 
 def test_lists_operations():
-    """ list ops """
+    """list ops"""
 
     list8 = [1] * 4
     assert list8 == [1, 1, 1, 1]
@@ -48,10 +48,10 @@ def test_lists_operations():
 
 
 def test_lists_sort():
-    """ list sort """
+    """list sort"""
 
     list1 = ["1", "6", "9", "15", "10"]
-    list1.sort() 
+    list1.sort()
     assert list1 == ["1", "10", "15", "6", "9"]
 
     list2 = [1, 6, 9, 15, 10]
@@ -64,7 +64,7 @@ def test_lists_sort():
 
 
 def test_lists_comprehension():
-    """ list comprehension """
+    """list comprehension"""
 
     list1 = [i for i in range(10)]
     assert list1 == [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -83,7 +83,7 @@ def test_lists_comprehension():
 
 
 def test_lists_stack():
-    """ list as stack """
+    """list as stack"""
 
     stack = [1, 2, 3]
     stack.append(4)
@@ -103,7 +103,7 @@ def test_lists_stack():
 
 
 def test_lists_queue():
-    """ list as queue """
+    """list as queue"""
 
     queue = [1, 2, 3]
     queue.insert(0, 4)
@@ -114,7 +114,7 @@ def test_lists_queue():
 
     queue.pop(0)
     assert queue == [2, 3]
-    
+
     queue.pop(0)
     assert queue == [3]
 

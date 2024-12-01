@@ -2,7 +2,7 @@
 
 
 def test_dict_creating():
-    """ dict creating """
+    """dict creating"""
 
     dict1 = {}
     assert dict1 == {}
@@ -38,7 +38,7 @@ def test_dict_creating():
 
 
 def test_dict_access_members():
-    """ dict access members """
+    """dict access members"""
 
     dict1 = {"a": 1, "b": 2, "c": 3}
     assert dict1["a"] == 1
@@ -53,7 +53,7 @@ def test_dict_access_members():
 
 
 def test_dictr_iterating():
-    """ dict iterating """
+    """dict iterating"""
 
     dict1 = {"a": 1, "b": 2, "c": 3}
 

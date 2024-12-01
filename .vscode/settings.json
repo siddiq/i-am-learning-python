@@ -1,11 +1,17 @@
 {
-  "python.formatting.provider": "black",
-  "python.linting.enabled": true,
-  "python.linting.flake8Enabled": true,
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.organizeImports": "always"
   },
   "python.analysis.typeCheckingMode": "strict",
-  "makefile.configureOnOpen": false
+  "python.analysis.completeFunctionParens": true,
+  "makefile.configureOnOpen": false,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "always"
+    }
+  },
+  "isort.args": ["--profile", "black"]
 }

@@ -2,10 +2,10 @@
 
 
 def test_creating():
-    """ creating """
+    """creating"""
 
     text = "hello world"
-    text2 = 'hello world\''
+    text2 = "hello world'"
     multiline = """hello
     world"""
     text3 = r"hello\nworld"  # regex
@@ -22,7 +22,7 @@ def test_creating():
 
 
 def test_string_cases():
-    """ case """
+    """case"""
 
     text = "hello world"
 
@@ -38,7 +38,7 @@ def test_string_cases():
 
 
 def test_search_and_replace():
-    """ search and replace """
+    """search and replace"""
 
     text = "hello world"
 
@@ -54,16 +54,17 @@ def test_search_and_replace():
 
 
 def test_fstring():
-    """ f string """
+    """f string"""
 
     colmus = "name"
     table = "customers"
-    assert f"select {colmus} from {table}" == \
-        "select name from customers"
+    assert f"select {colmus} from {table}" == "select name from customers"
 
 
 def test_formatting():
-    """ formatting """
+    """formatting"""
 
-    assert "select {} from {}".format("first_name", "users") == \
-        "select first_name from users"
+    assert (
+        "select {} from {}".format("first_name", "users")
+        == "select first_name from users"
+    )
