@@ -3,9 +3,9 @@ test:
 	@poetry run pytest -v -s
 
 
-.PHONY: test-collections
-test-collections:
-	@poetry run pytest -v -s -k collections
+.PHONY: shell
+shell:
+	@poetry shell
 
 
 .PHONY: clean

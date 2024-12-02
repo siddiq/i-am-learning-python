@@ -28,16 +28,18 @@ def test_min_heap():
 def test_max_heap():
     """use heap"""
 
+    # pylint: disable=protected-access
     heap = [34, 46, 34, 77, 84, 95, 35, 30, 99, 40, 43, 55, 88, 67, 45, 25, 1]
-    heapq._heapify_max(heap)
+    heapq._heapify_max(heap)  # type: ignore
 
     # get n largest
     assert heapq.nlargest(4, heap) == [99, 95, 88, 84]
 
     # return top 3
-    assert heapq._heappop_max(heap) == 99
-    assert heapq._heappop_max(heap) == 95
-    assert heapq._heappop_max(heap) == 88
+    assert heapq._heappop_max(heap) == 99  # type: ignore
+    assert heapq._heappop_max(heap) == 95  # type: ignore
+    assert heapq._heappop_max(heap) == 88  # type: ignore
+    # pylint: enable=protected-access
 
 
 def test_find_kth_largest():

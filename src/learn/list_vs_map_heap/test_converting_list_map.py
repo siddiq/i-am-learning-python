@@ -3,11 +3,13 @@ Map to List conversion tricks
 
 """
 
+from typing import Dict, List
 
-def test_list_to_map():
+
+def test_list_to_map() -> None:
     """list to map"""
 
-    list1 = [
+    list1: List[str] = [
         "abc",
         "def",
         "ghi",
@@ -23,7 +25,7 @@ def test_list_to_map():
         "vwx",
     ]
 
-    map1 = {}
+    map1: Dict[str, int] = {}
     for i in list1:
         if i in map1:
             map1[i] += 1

@@ -11,6 +11,7 @@ python = "^3.9"
 
 
 # Development dependencies
+pandas = "^2.2.3"
 [tool.poetry.dev-dependencies]
 pytest = "^7.0"  # Add testing frameworks or other dev tools here
 black = "^23.0"  # Code formatter
